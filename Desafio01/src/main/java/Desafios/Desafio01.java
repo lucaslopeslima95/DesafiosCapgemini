@@ -7,7 +7,7 @@ public class Desafio01 {
 	static Scanner scan = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		int[] listaNumeros = { 1, 9, 8, 11, 7, 5, 4, 2, 60, 25, 32 };
+		int[] listaNumeros = {1, 5, 3, 4, 2};
 		System.out.println("\nMediana e: " + retornaMediana(listaNumeros));
 	}
 

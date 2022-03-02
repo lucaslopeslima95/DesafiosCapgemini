@@ -6,11 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="flag"/>
+		<item key="selection" value="listaNumeros"/>
 		<list key="findhistory">
+			<item value="arr"/>
 			<item value="validaSenha"/>
 		</list>
 		<list key="replacehistory">
+			<item value="listaNumeros"/>
 			<item value="flag"/>
 		</list>
 	</section>
