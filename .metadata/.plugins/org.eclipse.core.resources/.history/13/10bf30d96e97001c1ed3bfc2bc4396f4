@@ -1,0 +1,25 @@
+import java.util.Iterator;
+
+public class Primeiro {
+	public static void main(String[] args) {
+		int aux;
+		int[] v = new int[10];
+		boolean repetidos=false;
+		
+		for (int i = 0; i < v.length; i++) {
+			v[i]=i;
+		}
+		
+		for (int i = 0; i < 9; i++) {
+			for (int j = 9; j < 0; j--) {
+				System.out.println("i: "+i+" j :"+j);
+				if (v[i]==v[j]) {
+					repetidos = true;
+				}
+			}
+			
+		}
+		System.out.println(repetidos);
+	}
+
+}

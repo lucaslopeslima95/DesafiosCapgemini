@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Desafio01 {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		List<Integer> listaNumeros = new ArrayList<Integer>();
+		boolean flag=true;
+		do{
+			
+			System.out.println("Informe um numero para adicionar a lista");
+			listaNumeros.add(scan.nextInt());
+			System.out.println("Deseja adicionar mais um numero?\n1-Sim\n2-Nao");
+			if (scan.nextInt()==2) {
+				flag = false;
+			}
+			 
+		} while (flag);
+		
+		
+		scan.close();
+	}
+
+}

@@ -1,0 +1,63 @@
+package CodigoDosDesafios;
+
+import java.util.Scanner;
+
+public class Desafio02 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String senha;
+		boolean flag = true;
+		do {
+			System.out.println("Informe uma senha");
+			senha = scan.next();
+			if (senha == null) {
+				System.out.println("Senha Vazia, Tente Novamente");
+				flag = true;
+			}else if (validaSenha(senha).equals(senha)) {
+				System.out.println("Senha Valida!");
+				flag = false;
+			}else {
+				System.out.println(validaSenha(senha));
+			}
+		} while (flag);
+
+		scan.close();
+	}
+
+	public static String validaSenha(String senha) {
+		
+		boolean validaSenha = false;
+		char[] senhaDesmenbrada = senha.toCharArray();
+		if (senha.length() <= 5) {
+			return "A senha deve conter no minimo 6 digitos. Adicione " + (6 - senha.length())+ " digitos para ser valida";
+		}
+		for (int i = 0; i < senhaDesmenbrada.length; i++) {
+			if (Character.isDigit(senhaDesmenbrada[i])) {
+				validaSenha = true;
+			}
+		}
+		if (!validaSenha) {
+			return "A senha deve conter pelo menos um numero";
+		}
+		for (int i = 0; i < senhaDesmenbrada.length; i++) {
+			if (!Character.isLetterOrDigit(senhaDesmenbrada[i])) {
+				validaSenha = true;
+			}
+		}
+		if (!validaSenha) {
+			retorno = retorno + "\nA senha deve conter pelo menos um caracterie especial";
+		}
+
+		if (senha.toLowerCase().equals(senha)) {
+			retorno = retorno + "\nA senha deve conter pelo menos uma letra maiuscula";
+		} else if (senha.toUpperCase().equals(senha)) {
+			retorno = retorno + "\nA senha deveconter pelo menos uma letra minuscula";
+		}
+		if (retorno.equals(senha)) {
+			return "senha valida";
+		}
+		return retorno;
+	}
+
+}
