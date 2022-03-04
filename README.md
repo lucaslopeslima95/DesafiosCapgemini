@@ -1,17 +1,17 @@
 # DesafiosCapgemini
 
-Repositorio de desenvolvimento dos desafios.
+-Repositorio do desenvolvimento dos desafios.
 
-#Sobre os Projetos
+#Sobre
 
-Os desafio foram desenvolvidos em participação dos processos seletivos da Academia Capgemini.
-
-#Tecnoloogias Usadas
-- Java 17
-- Biblioteca JUnit 5.8.
-- Maven
+-Eles foram desenvolvidos para a participação do processo seletivo da Academia Capgemini.
 
 ```bash
+#Tecnoloogias Ultilizadas
+- Java 17
+- Biblioteca JUnit 5.8.2.
+- Maven
+
 #Como Executar o projeto.
 
 # clonar repositório
@@ -30,3 +30,5 @@ Considere T, como o tamanho do texto.
 Se certifique de que linhas x colunas.
 Se múltiplos grids satisfazem as condições, escolha aquele com a menor área.
 Escreva um algoritmo que ao receber uma string s, mostre a mensagem encriptada de acordo com as regras descritas.
+
+Obs: Foi desenvolvido apenas o Back-end.
