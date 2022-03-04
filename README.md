@@ -10,10 +10,12 @@ Os desafio foram desenvolvidos em participação dos processos seletivos da Acad
 - Maven
 
 ```bash
+Como Executar o projeto.
+
 # clonar repositório
 git clone https://github.com/lucaslopeslima95/DesafiosCapgemini
 
-Logo após o clone concluído, importe o projeto em sua IDE de preferencia e execute os testes.
+Logo após o clone concluído, importe o projeto em sua IDE de preferencia desde que suporte java e execute os testes.
 
 Descrição dos desafios.
 
