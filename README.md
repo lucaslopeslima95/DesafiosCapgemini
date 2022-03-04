@@ -1,7 +1,9 @@
 # DesafiosCapgemini
+
 Repositorio de desenvolvimento dos desafios.
 
 #Sobre os Projetos
+
 Os desafio foram desenvolvidos em participação dos processos seletivos da Academia Capgemini.
 
 #Tecnoloogias Usadas
